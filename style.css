@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: aqua;
+  font-size: 16px; /* Adjust base font size for better responsiveness */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  color: aqua;
+  font-size: 24px;
+}
+
+.profile-picture {
+  width: 30%; /* Use percentage for flexible width */
+  margin-right: 20px;
+}
+
+.profile-picture img {
+  width: 75%;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+h2, h3, h4, h5, h6, h7, h8 {
+  font-size: 16px; /* Consistent heading size */
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-info a {
+  margin-right: 10px;
+  color: aqua;
+  text-decoration: none; /* Remove default link underline */
+}
+
+.contact-info a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  /* Adjust styles for mobile devices */
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 10px;
+  }
+
+  .profile-picture {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  /* Adjust other elements as needed for mobile layout */
+}
